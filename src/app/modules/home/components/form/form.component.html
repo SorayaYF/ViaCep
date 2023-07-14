@@ -1,0 +1,10 @@
+<div class="cabecalho">
+  <img src="../../../../../assets/imgs/ViaCep.png" alt="Logo ViaCep" />
+  <h1>Consulta de CEP</h1>
+</div>
+<br>
+<div class="campo-input">
+  <label for="zipCode">CEP:</label>
+  <input type="text" id="zipCode" placeholder="Digite o CEP" [(ngModel)]="zipCode">
+  <button (click)="buscarEndereco()">Buscar</button>
+</div>
