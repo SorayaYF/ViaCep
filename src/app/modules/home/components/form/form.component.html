@@ -5,6 +5,7 @@
 <br>
 <div class="campo-input">
   <label for="zipCode">CEP:</label>
-  <input type="text" id="zipCode" placeholder="Digite o CEP" [(ngModel)]="zipCode">
+  <input type="text" name="zipCode" id="zipCode" placeholder="Digite o CEP" [(ngModel)]="zipCode">
   <button (click)="buscarEndereco()">Buscar</button>
 </div>
+<app-table [address]="address"></app-table>
