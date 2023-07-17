@@ -3,21 +3,12 @@
         <caption>Endereço</caption>
         <thead>
             <tr>
-                <th>Rua:</th>
-                <th>Bairro:</th>
-                <th>Cidade:</th>
-                <th>CEP:</th>
-                <th>Estado:</th>
+                <th>Rua: <p>{{ address.street }}</p></th>
+                <th>Bairro: <p>{{ address.district }}</p></th>
+                <th>Cidade: <p>{{ address.city }}</p></th>
+                <th>CEP: <p>{{ address.zipCode }}</p></th>
+                <th>Estado: <p>{{ address.state }}</p></th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>{{ address.street }}</td>
-                <td>{{ address.district }}</td>
-                <td>{{ address.city }}</td>
-                <td>{{ address.state }}</td>
-                <td>{{ address.zipCode }}</td>
-            </tr>
-        </tbody>
     </table>
 </div>
